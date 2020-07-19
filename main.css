@@ -1,0 +1,42 @@
+body{
+    background-color:#333652 !important;
+    height: 100vh;
+    color: azure !important;
+}
+
+.content{
+    line-height: 2;
+    
+   
+
+}
+
+image{
+    min-height: 300px;
+    width: 100%;
+    
+}
+#demo p{
+    font-size: 3rem;
+    animation: blob;
+    animation-delay: 20s;
+    transition:ease-in-out 2s;
+}
+
+p{
+    color: rgb(197, 201, 201);
+    font-weight: 200;
+}
+
+@keyframes blob{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+input{
+    color: azure !important;
+}
