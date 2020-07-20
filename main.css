@@ -40,3 +40,57 @@ p{
 input{
     color: azure !important;
 }
+
+.loading{
+    height: 30vh;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    perspective: 300;
+    
+   
+}
+.loader{
+    transform-origin: 50% 0;
+    height: 30px;
+    width: 90px;
+    transform-style: preserve-3d;
+    animation: line-anim 1s linear infinite ;
+
+}
+.circle{
+    position: absolute;
+    height: 100%;
+    width: 30px;
+    border-radius: 50%;
+    animation: circle-anim 0.5s linear 0.1s infinite;
+}
+
+#circle1{
+    background-color: #17A2B8;
+    left: 0;
+}
+
+#circle2{
+    background-color: #95b0b4;
+    right: 0;
+}
+
+@keyframes circle-anim {
+    from {
+        transform: rotateY(0deg);
+    }
+    to {
+        transform: rotateY(-180deg);
+    }
+}
+
+@keyframes line-anim {
+    0% {
+        transform: rotateX(-9deg) rotateY(0deg);
+    }
+    100% {
+        transform: rotateX(-9deg) rotateY(360deg);
+    }
+}

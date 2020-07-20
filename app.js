@@ -1,5 +1,10 @@
 $(document).ready(function(){
+ 
     $("button").click(function(){
+        //loading animation
+        var loader = "<div class='circle' id='circle1'></div>"
+        loader += "<div class='circle' id='circle2'>"
+        $(".loader").html(loader)
         var txt = $("#txt").val()
         $.getJSON("https://www.flickr.com/services/feeds/photos_public.gne?jsoncallback=?",
         {
